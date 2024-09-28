@@ -122,8 +122,8 @@ for i, datatuple in enumerate(pages):
         print_header(stdout,header.cupsMediaType)
         while line < im.height:
             lines = im.height - line
-            if lines > 255:
-                lines = 255
+            if lines > 1200:
+                lines = 1200
             print_raster(stdout, im, line, lines)
             line += lines
         print_footer(stdout) 
